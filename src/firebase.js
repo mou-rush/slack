@@ -7,6 +7,7 @@ const config = {
   apiKey: "AIzaSyC9EiPY0-viF6cdA6D-4_UHxlZILzmLWOg",
   authDomain: "slack-42ea8.firebaseapp.com",
   projectId: "slack-42ea8",
+  databaseURL: "https://slack-42ea8-default-rtdb.firebaseio.com/",
   storageBucket: "slack-42ea8.appspot.com",
   messagingSenderId: "360616170604",
   appId: "1:360616170604:web:57b02c1470b1b0fc89f449",
