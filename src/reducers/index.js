@@ -3,7 +3,7 @@ import * as actionTypes from "../actions/types";
 
 const initialUserState = {
   currentUser: null,
-  isLoading: true
+  isLoading: true,
 };
 
 const user_reducer = (state = initialUserState, action) => {
@@ -11,7 +11,12 @@ const user_reducer = (state = initialUserState, action) => {
     case actionTypes.SET_USER:
       return {
         currentUser: action.payload.currentUser,
-        isLoading: false
+        isLoading: false,
+      };
+    case actionTypes.CLEAR_USER:
+      return {
+        ...initialUserState,
+        isLoading: false,
       };
     default:
       return state;
@@ -19,7 +24,7 @@ const user_reducer = (state = initialUserState, action) => {
 };
 
 const rootReducer = combineReducers({
-  user: user_reducer
+  user: user_reducer,
 });
 
 export default rootReducer;
