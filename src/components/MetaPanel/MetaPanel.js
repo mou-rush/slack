@@ -87,10 +87,10 @@ class MetaPanel extends React.Component {
             Created By
           </Accordion.Title>
           <Accordion.Content active={activeIndex === 2}>
-            <Header as="h3">
+            {/* <Header as="h3">
               <Image circular src={channel && channel.createdBy.avatar} />
               {channel && channel.createdBy.name}
-            </Header>
+            </Header> */}
           </Accordion.Content>
         </Accordion>
       </Segment>
