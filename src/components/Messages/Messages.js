@@ -166,10 +166,10 @@ class Messages extends React.Component {
         [this.state.channel.id]: {
           name: this.state.channel.name,
           details: this.state.channel.details,
-          createdBy: {
-            name: this.state.channel.createdBy.name,
-            avatar: this.state.channel.createdBy.avatar,
-          },
+          // createdBy: {
+          //   name: this.state.channel.createdBy.name,
+          //   avatar: this.state.channel.createdBy.avatar,
+          // },
         },
       });
     } else {
